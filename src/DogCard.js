@@ -1,3 +1,5 @@
+import faker from 'faker';
+
 const DogCard = ({url}) => {
 
     return (
@@ -5,7 +7,7 @@ const DogCard = ({url}) => {
             <img src={url} style={{ width: 300, height: 300, objectFit: 'cover' }}/>
         <form>
             <input type="checkbox" id="good-boy" name="good-boy" value="Good Boy"/>
-            <label style={{ fontSize: 'large' }}>good boy?</label>
+            <label style={{ fontSize: 'large' }}>Is {faker.name.firstName()} a good boy?</label>
         </form>
         </div>
     )
